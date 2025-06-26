@@ -44,6 +44,7 @@ import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
   `,
   styleUrls: ['./details.css'],
 })
+
 export class Details {
   route: ActivatedRoute = inject(ActivatedRoute)
   housingService = inject(HousingService);
@@ -60,6 +61,9 @@ export class Details {
     this.housingService.getHousingLocationById(housingLocationId).then((housingLocation) => {
       this.housingLocation = housingLocation;
     });
+
+
+    this.applyForm.valueChanges.subscribe(console.log)
   }
 
   submitApplication() {

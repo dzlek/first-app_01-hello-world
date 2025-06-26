@@ -16,6 +16,7 @@ import { RouterModule } from '@angular/router';
   `,
   styleUrls: ['./housing-location.css'],
 })
+
 export class HousingLocation {
   housingLocation = input.required<HousingLocationInfo>();
 }

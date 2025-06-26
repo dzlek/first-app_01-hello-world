@@ -20,6 +20,7 @@ import {RouterModule} from '@angular/router';
   `,
   styleUrls: ['./app.css'],
 })
+
 export class App {
   title = 'homes';
 }

@@ -1,0 +1,16 @@
+
+     <div class = 'footer' [style.background-color] = 'backgroundColor'>
+      Step:
+      <input type="text" placeholder="{{step.value}}" (change) = "changeStep(step.value)" #step>
+      <div>
+      counter works!
+    </div>
+    <button (click)="increase()">+</button>
+    <button (click)="decrease()">-</button>
+    <button (click)="reset()">Reset</button>
+    <p>
+      counter: {{count}}
+    </p>
+  </div>
+  <app-footer-child [count]="count"></app-footer-child>
+    
